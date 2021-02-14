@@ -2,6 +2,20 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.h2-tilte {
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
+/* header start*/
+
 .top {
     background-color: #FED100;;
 }
@@ -17,17 +31,17 @@ body {
 }
 
 .nav-tel {
-    text-decoration: underline;
+    display: inline-block !important;
+    border-bottom: 1px solid black;
 }
+
+/* header end*/
+
+
+/* jumbotron start*/
 
 .jumbotron {
     background-color: inherit !important;
-}
-
-.jumbotron__title {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 131.9%;
 }
 
 .jumbotron > p {
@@ -37,7 +51,7 @@ body {
 }
 
 .loader {
-    background: url("img/loader.png") right no-repeat;
+    background: url("../img/loader.png") right no-repeat;
     width: 248px;
     height: 396px;
 }
@@ -53,14 +67,11 @@ body {
     line-height: 24px;
 }
 
+/* jumbotron end*/
+
 
 /* how-it-works start*/
 
-.how-it-works__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
 
 .how-it-works__list {
     list-style: none;
@@ -74,27 +85,25 @@ body {
 }
 
 .how-it-works__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .how-it-works__text {
     margin-left: 29px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 /* how-it-works end*/
+
 
 /* price start*/
 
 .prices {
     background-color: #F8FBFF;;
-}
-
-.prices__title {
-    padding-top: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
 }
 
 .card {
@@ -139,13 +148,6 @@ body {
 
 /* autopark start*/
 
-.autopark__title {
-    padding-top: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
-
 .carousel-indicators li {
     width: 10px !important;
     border-radius: 50% !important;
@@ -169,13 +171,6 @@ body {
     background-color: #FED100;
 }
 
-.reviews__title {
-    padding-top: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
-
 .user-name {
     margin-top: 40px;
     font-weight: 500;
@@ -184,12 +179,14 @@ body {
 }
 
 .stars {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-left: 10px;
 }
 
 .star {
-    background: url("img/star.svg") center no-repeat;
+    background: url("../img/star.svg") center no-repeat;
     width: 15px;
     height: 15px;
 }
@@ -218,12 +215,6 @@ body {
 
 /* form start*/
 
-.form__title {
-    padding-top: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
 
 .form > p {
     font-size: 15px;
@@ -244,7 +235,7 @@ body {
 
 .map-background {
     margin-top: 70px;
-    background: url("img/map.png") center no-repeat;
+    background: url("../img/map.png") center no-repeat;
     width: 100%;
     min-height: 666px;
 }
@@ -270,20 +261,14 @@ body {
     text-align: center;
 }
 
-.footer a {
-    text-decoration: none;
-    color: black;
-}
-
-.footer__title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-}
 
 .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
 }
 
