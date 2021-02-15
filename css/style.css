@@ -1,5 +1,13 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 320px;
 }
 
 .h2-tilte {
@@ -12,6 +20,11 @@ body {
 a {
     text-decoration: none;
     color: black !important;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: inherit !important;
 }
 
 /* header start*/
@@ -58,13 +71,18 @@ a {
 
 .btn-order_red  {
     color: #F2F2F2;
-    background-color: #FF352B;;
+    background-color: #FF352B;
     border: none;
     height: 60px;
     width: 100%;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    transition: .4s;
+}
+
+.btn-order_red:hover {
+    background-color:#d11104;
 }
 
 /* jumbotron end*/
@@ -125,6 +143,11 @@ a {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    transition: .4s;
+}
+
+.btn-order_yellow:hover {
+    background-color: #ffa207;
 }
 
 .price {
