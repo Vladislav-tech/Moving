@@ -35,6 +35,7 @@ a:hover {
 
 .nav-title {
     margin-top: 5vh;
+    font-weight: 600;
 }
 
 .navbar-light .navbar-toggler {
@@ -58,6 +59,7 @@ li.nav-item {
 .nav-tel {
     display: inline-block !important;
     border-bottom: 1px solid black;
+    font-weight: 600 !important;
 }
 
 /* header end*/
@@ -194,6 +196,10 @@ li.nav-item {
 
 
 /* autopark start*/
+
+.autopark__subtitle {
+    margin-bottom: 50px;
+}
 
 .nav-tabs {
     display: flex;
@@ -363,17 +369,38 @@ li.nav-item {
 
 /* md-устройства (больше или равно 768px) */
 @media (min-width: 768px) {
+
+    .nav-title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
     .h2-tilte {
         font-size: 30px;
     }
 
-    .jumbotron > p {
-        font-size: 30px;
+    .jumbotron__title {
+        font-size: 70px;
+        line-height: 126.9%;
+    }
+
+    .jumbotron p {
         margin-top: 20px;
+        margin-bottom: 42px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
     }
 
     .features {
         display: flex;
+
+    }
+
+    .features__img-wrapper {
+        display: flex;
+        margin-right: 40px;
     }
 
     .features__img {
@@ -508,7 +535,3 @@ li.nav-item {
         width: 100%;
     }
   }
-
-
-
-  
