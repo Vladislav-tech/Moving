@@ -33,14 +33,26 @@ a:hover {
     background-color: #FED100;;
 }
 
-.header__title {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+.nav-title {
+    margin-top: 5vh;
 }
 
 .navbar-light .navbar-toggler {
     border: none;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5vh;
+
+}
+
+li.nav-item {
+    margin-right: 37px;
+    width: 207px;
+    text-align: center;
 }
 
 .nav-tel {
@@ -92,6 +104,8 @@ a:hover {
 
 
 .how-it-works__list {
+    display: inline-flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -106,6 +120,8 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 77px;
+    width: 50%;
 }
 
 .how-it-works__text {
@@ -115,6 +131,9 @@ a:hover {
         align-self: center;
 }
 
+.how-it-works__description {
+    max-width: 306px;
+}
 /* how-it-works end*/
 
 
@@ -122,6 +141,11 @@ a:hover {
 
 .prices {
     background-color: #F8FBFF;;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -171,6 +195,24 @@ a:hover {
 
 /* autopark start*/
 
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+
+.nav-tabs .nav-link.active {
+    border: 1px solid #FED100 !important;
+    border-radius: none !important;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid #EBEBEB !important;
+    
+}
+
 .carousel-indicators li {
     width: 10px !important;
     border-radius: 50% !important;
@@ -182,6 +224,7 @@ a:hover {
 .carousel-indicators {
     bottom: -1.5rem !important;
 }
+
 
 /* autopark end*/
 
@@ -223,11 +266,17 @@ a:hover {
 	border-bottom: 1px solid black;
 }
 
+.all-reviews-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .all-reviews {
+    display: inline-block;
     background-color: #FED100;
-	border: none;
+	border: 1px solid black;
 	height: 60px;
-	width: 100%;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
@@ -258,7 +307,7 @@ a:hover {
 
 .map-background {
     margin-top: 70px;
-    background: url("../img/map.png") center no-repeat;
+    background: url("../img/map-big.png") center no-repeat;
     width: 100%;
     min-height: 666px;
 }
@@ -309,3 +358,157 @@ a:hover {
 }
 
 /* footer end */
+
+
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+    .h2-tilte {
+        font-size: 30px;
+    }
+
+    .jumbotron > p {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .features {
+        display: flex;
+    }
+
+    .features__img {
+        margin-right: 30px;
+    }
+
+    .prices {
+        background: #ffffff;
+    }
+
+    .card {
+        margin-top: 50px;
+        border: 1px solid #EBEBEB !important;
+        width: 33.3%;
+        margin-left: 18px;
+        padding: 8vh 2vw;
+    }
+
+    .card_2 {
+        border: 1px solid #FED100 !important;
+    }
+
+    .reviews {
+        min-height: 665px;
+    }
+
+    .reviews .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .review {
+        height: 100%;
+    }
+
+    .all-reviews {
+        margin-top: 81px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .form-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-group {
+        display: flex;
+    }
+    
+    .form-group input {
+        margin-right: 70px;
+    }
+
+    .map__adress {
+        display: inline-block;
+        background-color: #ffffff;
+        margin-top: 10vh;
+        margin-left: 15vw;
+        padding: 40px;
+        min-width: 300px;
+    }
+
+    .map__address-items {
+        list-style: none;
+        list-style-image: url("/img/icons/check-yellow.svg");
+    }
+
+    .map__address-item {
+        margin-top: 19px;
+    }
+
+    .map__social-media {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        list-style: none;
+    }
+
+    .footer__title  {
+        padding: 0;
+        text-align: left !important;
+    }
+
+    .footer p {
+        text-align: left;
+        margin-top: 24px;
+    }
+
+    .footer .navbar-nav {
+        margin-top: 0;
+    }
+
+    .footer  .btn-order_yellow {
+        margin-top: 0 !important;
+    }
+
+    .footer li.nav-item {
+        margin-right: 37px;
+        width: 207px;
+        text-align: left;
+        width: 40%;
+        margin-left: 68px;
+    }
+
+  }
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+    /* CSS для ширины от 768px до 991px */
+    li.nav-item {
+        text-align: left;
+    }
+  }
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+    /* CSS для ширины до 575px (включительно) */
+    .how-it-works__list-item {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .card_2 {
+        width: 100%;
+    }
+
+    .all-prices-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+  }
+
+
+
+  
